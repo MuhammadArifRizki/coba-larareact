@@ -8,6 +8,7 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './resources/js/**/*.jsx',
+        "./node_modules/@relume_io/relume-ui/dist/**/*.{js,ts,jsx,tsx}"
     ],
 
     theme: {
@@ -19,4 +20,5 @@ export default {
     },
 
     plugins: [forms],
+    presets: [require("@relume_io/relume-tailwind")],
 };
